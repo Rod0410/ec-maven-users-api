@@ -23,8 +23,11 @@ jobs:
       - name: Build with Maven
         run: mvn clean package -DskipTests
 
-      - name: Login to ACR
-        run: echo "${{ secrets.ACR_PASSWORD }}" | azure login -u "${{ secrets.ACR_LOGIN_SERVER }} -u "${{ secrets.ACR_USERNAME }}" --password-stdin
+      - name: Login en Azure Container Registry
+        run: |
+          docker login ${{ secrets.ACR_LOGIN_SERVER }} \
+            -u ${{ secrets.ACR_USERNAME}} \
+            -p ${{ secrets.ACR_PASSWORD }}
 
       - name: Set Image Name
         id: vars
