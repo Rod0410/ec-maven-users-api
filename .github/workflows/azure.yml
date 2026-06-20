@@ -12,7 +12,7 @@ env:
   IMAGE_TAG:       latest
   DOCKERFILE_PATH: Dockerfile
   ACR_REGISTRY:    acrrod01.azurecr.io
-  APP_NAME:        myapp
+  APP_NAME:        myapp-rod
   ACI_NAME:        aci-myapp-rod
   RESOURCE_GROUP:  rgrodeastus1
   LOCATION:        eastus
