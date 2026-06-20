@@ -14,7 +14,7 @@ env:
   ACR_REGISTRY:    cregatceastus01.azurecr.io
   APP_NAME:        myapp
   ACI_NAME:        aci-myapp
-  RESOURCE_GROUP:  mod3lab2
+  RESOURCE_GROUP:  rgrodeastus1
   LOCATION:        eastus
   CONTAINER_PORT:  "8080"
 
@@ -195,7 +195,7 @@ jobs:
 # az ad sp create-for-rbac \
 #   --name "sp-github-actions-aci" \
 #   --role Contributor \
-#   --scopes /subscriptions/<TU_SUBSCRIPTION_ID>
+#   --scopes /subscriptions/95cffdd5-4c5c-4ab3-8a80-04a0957af650
 
 
 
