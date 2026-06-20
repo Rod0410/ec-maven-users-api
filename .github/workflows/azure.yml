@@ -13,7 +13,7 @@ env:
   DOCKERFILE_PATH: Dockerfile
   ACR_REGISTRY:    acrrod01.azurecr.io
   APP_NAME:        myapp
-  ACI_NAME:        aci-myapp
+  ACI_NAME:        aci-myapp-rod
   RESOURCE_GROUP:  rgrodeastus1
   LOCATION:        eastus
   CONTAINER_PORT:  "8080"
